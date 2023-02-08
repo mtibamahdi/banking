@@ -2,11 +2,11 @@ package com.mtibaa.banking.services.impl;
 
 
 import com.mtibaa.banking.dto.AddressDto;
-import com.mtibaa.banking.services.AdressService;
+import com.mtibaa.banking.services.AddressService;
 
 import java.util.List;
 
-public class AddressServiceImpl implements AdressService {
+public class AddressServiceImpl implements AddressService {
     @Override
     public Integer save(AddressDto dto) {
         return null;
