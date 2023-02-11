@@ -1,10 +1,9 @@
 package com.mtibaa.banking.services.impl;
 
-import com.mtibaa.banking.models.Transaction;
 import com.mtibaa.banking.models.TransactionType;
 import com.mtibaa.banking.repositories.TransactionRepository;
 import com.mtibaa.banking.services.StatisticsService;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -14,7 +13,7 @@ import java.time.LocalTime;
 import java.util.Map;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class StatisticsServiceImpl implements StatisticsService {
 
     private final TransactionRepository transactionRepository;

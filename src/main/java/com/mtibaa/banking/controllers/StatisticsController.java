@@ -24,21 +24,21 @@ public class StatisticsController {
         return ResponseEntity.ok(service.findSumTransactionsByDate(startDate,endDate,userId));
     }
     @GetMapping("/account-balance/{user-id}")
-    ResponseEntity<BigDecimal> getAccountBalance(
+    public ResponseEntity<BigDecimal> getAccountBalance(
             @PathVariable("user-id") Integer userId
     ){
         return ResponseEntity.ok(service.getAccountBalance(userId));
     }
 
     @GetMapping("/highest-transfer/{user-id}")
-    ResponseEntity<BigDecimal> highestTransfer(
+    public ResponseEntity<BigDecimal> highestTransfer(
             @PathVariable("user-id") Integer userId
     ){
         return ResponseEntity.ok(service.highestTransfer(userId));
     }
 
     @GetMapping("/highest-deposit/{user-id}")
-    ResponseEntity<BigDecimal> highestDeposit(
+    public ResponseEntity<BigDecimal> highestDeposit(
             @PathVariable("user-id") Integer userId
     ){
         return ResponseEntity.ok(service.highestDeposit(userId));
