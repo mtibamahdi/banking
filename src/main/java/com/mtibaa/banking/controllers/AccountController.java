@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/account")
+@RequestMapping("/accounts")
 public class AccountController {
 
     private final AccountService service;
@@ -33,7 +33,7 @@ public class AccountController {
         return ResponseEntity.ok(service.findById(accountId));
     }
 
-    @PostMapping("/{account-id}")
+    @DeleteMapping("/{account-id}")
     public ResponseEntity<Void> delete(
             @PathVariable ("account-id") Integer accountId
     ){
