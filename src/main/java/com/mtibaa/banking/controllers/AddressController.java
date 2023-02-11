@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/addresses")
 @RequiredArgsConstructor
+@RequestMapping("/addresses")
 public class AddressController {
 
     private final AddressService service;
